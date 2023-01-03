@@ -1,0 +1,430 @@
+:root {
+  --blue: rgb(33, 111, 177);
+  --cyan: rgb(44, 153, 163);
+  --grey: rgb(57, 57, 59);
+  --white: #ffffff;
+  --black: #000;
+}
+
+body {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 1px;
+  font-family: "-apple-system";
+}
+
+/* Section Heading CSS */
+.section-heading {
+  background-color: var(--blue);
+  padding: 10px 0px;
+  text-align: center;
+  width: 100%;
+  color: var(--white);
+}
+
+/* desafio Info CSS */
+.section__info {
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2px 0px;
+  margin-bottom: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.section__info > div {
+  width: 50%;
+  text-align: center;
+}
+
+.section__info_marker {
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.section__info > h1,
+.section__info > h2 {
+  color: var(--white);
+}
+
+/* media querys para info */
+
+@media (max-width: 600px) {
+  .section__info > div {
+    width: 0%;
+    padding: 2px;
+    font-size: 14px;
+  }
+
+  .section__info > h1,
+  .section__info > h2 {
+    color: var(--white);
+    font-size: medium;
+  }
+}
+
+@media (max-width: 800px) {
+  .section__info > div {
+    width: 50%;
+    padding: 2px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .section__info > div {
+    width: 100%;
+    padding: 1px;
+  }
+}
+
+/* section low cost */
+.section-lowcost {
+  padding: 4px;
+}
+
+.section-card {
+  background-color: white;
+  padding: 1px 50px;
+}
+
+/* Agrega aquí el resto de los estilos para el body y el footer */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--blue);
+  border-radius: 10px;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+  color: var(--white);
+  font-size: small;
+  padding: 6px;
+
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+/* Buttons */
+button {
+  border-radius: 10px;
+  cursor: pointer;
+  height: 25px;
+  padding: 5px 0;
+  text-align: center;
+  width: 100px;
+  border: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box_1 {
+  padding: 10px 2px;
+  grid-area: box1;
+  place-self: center;
+  text-align: center;
+}
+
+.box_1 > h1 {
+  color: var(--blue);
+  font-size: 20px;
+}
+
+.box_1 > h3 {
+  color: var(--grey);
+  font-size: 15px;
+}
+
+.card-container {
+  display: grid;
+  justify-items: center;
+  justify-content: space-around !important;
+  grid-gap: 2px;
+}
+
+@media (min-width: 800px) {
+  .card-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    padding: 4px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 8px;
+    padding: 4px 10px;
+  }
+}
+
+/* Agrega aquí el resto de los estilos para las tarjetas */
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    padding: 4px;
+  }
+
+  /* Buttons */
+  .card > button {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 50%;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .card {
+    width: 100%;
+    padding: 4px;
+  }
+}
+
+/* Agrega aquí el resto de los estilos para los box */
+
+@media (max-width: 600px) {
+  .box_1 {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .box_1 {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .box_1 {
+    padding: 10px;
+  }
+}
+
+/* desafio LowCost CSS */
+.grid-lowcost {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 4px 200px 4px 200px;
+}
+
+.desafio-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  justify-content: center;
+  align-items: center;
+}
+
+.desafio-info > div:first-child {
+  width: 100%;
+  color: var(--white);
+  text-align: center;
+  border-radius: 10px;
+  font-size: 12px;
+  background-color: var(--grey);
+  padding: 0px 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 1150px) {
+  .grid-lowcost {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 800px) {
+  .grid-lowcost {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 5px;
+    padding: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-lowcost {
+    display: block;
+    grid-template-columns: repeat(1, 2fr);
+    grid-gap: 10px;
+    padding-top: 10px;
+    justify-items: stretch;
+  }
+
+  .desafio-info {
+    width: 95%;
+    font-size: 14px;
+    font-size: 12px;
+    padding: 0px 2px;
+    text-align: justify;
+  }
+
+  .desafio-info > div:first-child {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: var(--white);
+    text-align: center;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: var(--grey);
+    padding: 2px;
+  }
+
+  .desafio-image > img {
+    width: 480px;
+    height: 350px;
+    margin-left: 0px;
+  }
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+  width: 85vw;
+}
+
+/* Section platform */
+/* desafio Info CSS */
+.section_platform {
+  background-color: var(--cyan);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 120px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.section_platform > div {
+  text-align: center;
+}
+
+.section_platform > h1,
+.section_platform > h2 {
+  color: var(--white);
+}
+
+.options_platform {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+}
+
+@media (max-width: 600px) {
+  .section_platform > h1,
+  .section_platform > h2 {
+    color: var(--white);
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .section_platform {
+    justify-content: space-around;
+    display: flex;
+  }
+  .options_platform {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    flex-direction: column;
+  }
+
+  /* Buttons */
+  .options_platform > button {
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* desafio Footer Css */
+.footer__section {
+  margin-top: 15px;
+  background-color: var(--blue);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  color: var(--white);
+}
+
+.footer__section > div {
+  place-self: center;
+}
+
+.footer_social_media > img {
+  width: 30px;
+  height: 30px;
+  margin: 0 5px;
+}
+
+.footer_contact_info > h5 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer_contact_info > ul {
+  font-size: small;
+}
+
+/* media queries for footer */
+@media (max-width: 600px) {
+  .footer__section {
+    margin-top: 10px;
+    background-color: var(--blue);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+    color: var(--white);
+  }
+
+  .footer_contact_info > ul {
+    font-size: small;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 5px;
+    grid-column-gap: 30px;
+    padding-left: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo_image > img {
+    padding: 2px;
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* Developed by */
+.autor {
+  background-color: var(--grey);
+  text-align: center;
+  color: var(--white);
+}
+
+.autor > p {
+  margin: 0;
+  font-size: small;
+  padding: 10px;
+}
