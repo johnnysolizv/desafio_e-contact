@@ -411,8 +411,8 @@ hr.solid {
 @media (max-width: 600px) {
   .logo_image > img {
     padding: 2px;
-    width: 100px;
-    height: 100px;
+    width: 10%;
+    height: 10%;
   }
 }
 
